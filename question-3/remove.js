@@ -11,7 +11,6 @@ if (fs.existsSync(logsPath)) {
     process.chdir(logsPath);
 
     const filenames = fs.readdirSync('.');
-
     filenames.forEach(filename => {
         fs.rmSync(filename);
         console.log(`deleted ${filename}`);
